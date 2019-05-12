@@ -1,0 +1,14 @@
+prefix=/usr/local/lib/ffmpeg4.1/
+exec_prefix=${prefix}
+libdir=/usr/local/lib/ffmpeg4.1//lib
+includedir=/usr/local/lib/ffmpeg4.1//include
+
+Name: libavdevice
+Description: FFmpeg device handling library
+Version: 58.5.100
+Requires: 
+Requires.private: libavfilter >= 7.40.101, libswscale >= 5.3.100, libpostproc >= 55.3.100, libavformat >= 58.20.100, libavcodec >= 58.35.100, libswresample >= 3.3.100, libavutil >= 56.22.100
+Conflicts:
+Libs: -L${libdir}  -lavdevice 
+Libs.private: -lm -L/usr/lib/x86_64-linux-gnu -lxcb -L/usr/local/lib/libxcb/lib -lxcb-shm -L/usr/lib/x86_64-linux-gnu -lxcb-shape -L/usr/lib/x86_64-linux-gnu -lxcb-xfixes -L/usr/lib/x86_64-linux-gnu -lasound
+Cflags: -I${includedir}

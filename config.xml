@@ -1,0 +1,16 @@
+﻿<Config>
+    <General>
+        <Main>
+            <ReVd>true</ReVd>
+            <ReAu>true</ReAu>
+        </Main>
+    </General>
+    <Ui>
+    </Ui>
+    <Video>
+    </Video>
+    <Audio>
+    </Audio>
+    <File>
+    </File>
+</Config>
